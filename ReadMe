@@ -4,3 +4,63 @@ selenium-server-standalone-3.4.0.jar
 java-client-5.0.0-BETA9.jar
 
 Unit Testing Tool: TestNG
+
+--------------------------------------------------------------------------------------------------------------
+
+**********Install Android SDK***********
+
+In Eclipse > Add New Software
+Name: p2repo
+URL: https://dl-ssl.google.com/android/eclipse/
+
+It will download the sdk at location: C:\Users\Naman Agrawal\android-sdks\
+
+>Set the User Variable
+
+ANDROID_HOME = C:\Users\Naman Agrawal\android-sdks
+
+>Update the Path System Variable
+
+C:\Users\Naman Agrawal\android-sdks\platform-tools
+C:\Users\Naman Agrawal\android-sdks\tools
+
+>Install NodeJS and update the Path System Variable
+
+C:\Program Files\nodejs\
+
+>Install Appium Server
+
+Jars:
+
+java-client-5.0.0-BETA9.jar
+selenium-server-standalone-3.4.0.jar
+
+******************************************
+
+Android Commands
+
+--To start the SDK manager
+
+android
+
+
+--To get the AppPackage and Activity
+
+adb shell
+dumpsys window windows | grep -E 'mCurrentFocus|mFocusedApp'
+
+--To get the element 
+
+Go to sdk > tools > uiautomatorviewer.bat
+Note: Need to stop the appium server sometimes
+
+--To get the attached devices
+
+adb devices
+
+--To start the android chorme cast
+
+https://xsavikx.github.io/AndroidScreencast/
+Go to folder E:\Softwares\Appium\androidscreencast-0.0.10s-windows\androidscreencast-0.0.10s
+open command prompt
+java -jar androidscreencast-0.0.10s-executable.jar

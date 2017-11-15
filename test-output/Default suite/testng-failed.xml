@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="DragDrop">
+      <class name="com.appium.test.MyFirstTest">
         <methods>
-          <include name="End"/>
-          <include name="setUp"/>
-          <include name="dragDrop"/>
+          <include name="loginToApplication"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- DragDrop -->
+      </class> <!-- com.appium.test.MyFirstTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
