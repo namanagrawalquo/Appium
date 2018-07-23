@@ -64,3 +64,67 @@ https://xsavikx.github.io/AndroidScreencast/
 Go to folder E:\Softwares\Appium\androidscreencast-0.0.10s-windows\androidscreencast-0.0.10s
 open command prompt
 java -jar androidscreencast-0.0.10s-executable.jar
+
+**********************************Casting Android Screen*******************************
+
+--To start the android chorme cast
+
+https://xsavikx.github.io/AndroidScreencast/
+Go to folder E:\Softwares\Appium\androidscreencast-0.0.10s-windows\androidscreencast-0.0.10s
+open command prompt
+java -jar androidscreencast-0.0.10s-executable.jar
+
+--To start ASM (Android Screen Monitor)
+
+Go to folder E:\Softwares\Appium\ASM_2_50
+open command product
+java -jar asm.jar
+
+---To start droid
+
+
+
+****************************************************************************************
+
+--To get the Appium log
+
+adb logcat > C:\LogFolder\logs
+
+--To get the device model 
+
+adb shell
+getprop ro.product.model
+
+--To get the android build/release version
+
+adb shell
+getprop ro.build.version.release
+
+--To get the API version of device
+
+adb shell
+getprop ro.build.version.sdk
+
+--To get all installed packages
+
+adb shell
+pm list packages –f
+
+pm list packages –f | grep "chrome"
+
+--To install apk
+
+adb shell
+pm install "path to the app"
+
+--To uninstall apk
+
+adb shell
+pm uninstall <app Package Name>
+
+--To connect the device using WIFI
+
+Connect the device using USB debugging mode
+adb –s <device id> tcpip 5555
+Disconnect the USB cable
+adb connect <Device internet IP address>
